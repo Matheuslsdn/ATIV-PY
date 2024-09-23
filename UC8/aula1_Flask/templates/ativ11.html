@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table{
+        margin: 0 auto;
+        border: 2px solid black;
+        padding: 5px;
+    }
+    table th, td{
+        border: 2px solid black;
+        padding: 10px;
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Endereço</th>
+            <th>Telefone</th>
+            <th>Email</th>
+            <th>CPF</th>
+            <th>Tipo de Conta</th>
+        </tr>
+        {% for item in dicionario %}
+        <tr>
+            <td>{{ item.nome }}</td>
+            <td>{{ item.endereço }}</td>
+            <td>{{ item.telefone }}</td>
+            <td>{{ item.email }}</td>
+            <td>{{ item.cpf }}</td>
+            <td>{{ item.tipodeconta }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    
+
+    <a href="/">Voltar</a>
+</body>
+</html>

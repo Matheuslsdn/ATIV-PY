@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="max-width: 1200px; margin: 0 auto;">
+    <h1 style="text-align: center;">Lesgal</h1>
+    <h1 style="text-align: center;">Bem vindo, {{ varnome }}!</h1>
+    {% if varnome == 'Admin' %}
+        <p style="text-align: center;">Você tem acesso administrativo</p>
+    {% else %}
+        <p style="text-align: center;">Você é um Usuário</p>    
+    {% endif %}
+    <li><a href="/">voltar</a></li>
+</body>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Produtos</th>
+    </tr>
+    {% if lista %}
+        {% for item in lista %}
+            <tr>
+                <td>{{ item }}</td>
+            </tr>
+        {% endfor %}
+    {% else %}
+        <tr>
+            <td>Nenhum produto adicionado.</td>
+        </tr>
+    {% endif %}
+</table>

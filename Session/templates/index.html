@@ -1,0 +1,4 @@
+@app.route('/get_session')
+def get_session():
+    usuario = session.get('username')
+    return f'usuario armazenado na sessão é: {usuario}'

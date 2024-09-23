@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block titulo %} titulo padrão {% endblock %}</title>
+</head>
+<body style="margin: 0; padding: 0;">
+    <h1 style="background-color: gray; text-align:center">Aqui é o texto que vai em todas as páginas</h1>
+    {% include 'menu.html' %}
+    <main>
+        {% block conteudo %}
+
+        {% endblock %}
+        {% block nav %}
+
+        {% endblock %}
+        {% block sidebar %}
+
+        {% endblock %}
+    </main>
+    
+    {% include 'footer.html' %}
+</body>
+</html>

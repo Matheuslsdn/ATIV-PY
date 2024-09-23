@@ -1,0 +1,19 @@
+
+
+{% block conteudo %}
+
+    <form method='POST' action='/login'>
+        <label for='nome'>Nome do usuário: </label><br>
+        <input type='text' id='name' name='nome'><br>
+        <label for='usuario'>Email usuário: </label><br>
+        <input type='text' id='email' name='email'><br>
+        <input type='submit' value='enviar'>
+    </form>
+    <h2>Lista de usuários:</h2>
+    <ul>
+        {% for usuario in usuarios %}
+            <li>{{ usuario['nome'] }} ({{ usuario['email'] }})</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
